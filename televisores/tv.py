@@ -29,8 +29,9 @@ class TV:
     def setEstado(self,estad):
         self._estado = estad
 
-    def setNumTV(self,numt):
-        self._numTV = numt
+    @classmethod
+    def setNumTV(cls,numt):
+        cls._numTV = numt
 
     def getMarca(self):
         return self._marca
@@ -47,8 +48,9 @@ class TV:
     def getCanal(self):
         return self._canal
     
-    def getNumTV(self):
-        return self._numTV
+    @classmethod
+    def getNumTV(cls):
+        return cls._numTV
     
     def getEstado(self):
         return self._estado
